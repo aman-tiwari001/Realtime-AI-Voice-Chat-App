@@ -2,6 +2,11 @@
 
 A real-time voice to voice companion which speak naturally like humans.
 
+<img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/150a834c-6eb4-44ff-8efd-f496ee055704" />
+<img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/f27ab969-8b2a-4c1d-b1cf-333618cb517a" />
+
+
+
 ---
 
 ## 🚀 How to Run
