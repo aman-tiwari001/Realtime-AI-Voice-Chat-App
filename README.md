@@ -1,11 +1,32 @@
-# Aura Voice AI
+# 🎙️ Aura Voice AI
 
-A real-time voice to voice companion which speak naturally like humans.
+Aura is a real-time, voice-to-voice AI companion that listens, thinks, and speaks back naturally like humans.
+
+![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_LLM-FF4F00?style=for-the-badge&logo=lightning&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--OSS-000000?style=for-the-badge&logo=openai)
+![Llama](https://img.shields.io/badge/Llama_3.3-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+![ElevenLabs](https://img.shields.io/badge/ElevenLabs-000000?style=for-the-badge&logo=waveform&logoColor=white)
+![Speech_to_Text](https://img.shields.io/badge/Speech--to--Text-4A90E2?style=for-the-badge)
+![Text_to_Speech](https://img.shields.io/badge/Text--to--Speech-8E44AD?style=for-the-badge)
+
+
+<a href="https://youtu.be/-kdmWgZyQaQ?si=NeR1LTGSJPdErREg" target="_blank">▶️Demo Video</a>
 
 <img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/150a834c-6eb4-44ff-8efd-f496ee055704" />
 <img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/f27ab969-8b2a-4c1d-b1cf-333618cb517a" />
 
+---
 
+## 🏗️ Architecture
+
+<img width="1857" height="812" alt="image" src="https://github.com/user-attachments/assets/094bbf62-a9a0-4253-adf5-077b19540fc8" />
+
+**Flow:** User speaks → Audio is recorded and sent via WebSocket to server → STT transcribes → LLM generates response → TTS streams audio back → Audio is played on mobile app → User hears response
 
 ---
 
@@ -41,30 +62,6 @@ npm run start
 # Open Expo Go app on your phone and scan the QR code from the terminal
 # Start using the app!
 ```
-
----
-
-## 🏗️ Architecture
-
-```
-┌─────────────────┐          WebSocket          ┌─────────────────────────────────┐
-│   Mobile App    │◄──────────────────────────►│           Backend               │
-│   (Expo/React   │      Binary Audio +         │       (Node.js + WS)            │
-│    Native)      │      JSON Messages          │                                 │
-└─────────────────┘                             └────────────┬────────────────────┘
-                                                             │
-                                    ┌────────────────────────┼────────────────────────┐
-                                    │                        │                        │
-                                    ▼                        ▼                        ▼
-                            ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
-                            │  ElevenLabs  │        │     Groq     │        │  ElevenLabs  │
-                            │     STT      │        │     LLM      │        │     TTS      │
-                            │  (Scribe v2) │        │ (Llama 3.3/  │        │              │
-                            │              │        │  GPT OSS)    │        │  (Streaming) │
-                            └──────────────┘        └──────────────┘        └──────────────┘
-```
-
-**Flow:** User speaks → Audio is recorded and sent via WebSocket to server → STT transcribes → LLM generates response → TTS streams audio back → Audio is played on mobile app → User hears response
 
 ---
 
