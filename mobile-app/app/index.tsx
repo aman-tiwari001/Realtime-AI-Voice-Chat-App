@@ -2,7 +2,7 @@ import { Pressable, Text, View, Alert, Animated } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
-import { COLORS } from '@/constants/colors';
+import { COLORS } from '../constants/colors';
 import { useEffect, useState, useRef, useCallback } from 'react';
 import * as FileSystem from 'expo-file-system/legacy';
 import {
@@ -14,8 +14,8 @@ import {
 	useAudioPlayer,
 } from 'expo-audio';
 
-import AudioWave from '@/components/audio-wave';
-import { uint8ArrayToBase64 } from '@/utils';
+import AudioWave from '../components/audio-wave';
+import { uint8ArrayToBase64 } from '../utils';
 
 export default function Index() {
 	const [isConnected, setIsConnected] = useState(false);

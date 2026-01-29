@@ -5,11 +5,11 @@ import { fileURLToPath } from 'url';
 import { mkdir } from 'node:fs/promises';
 import { config } from 'dotenv';
 import { randomUUID } from 'node:crypto';
-import { transcribeAudio } from './services/stt';
-import { addUserChatMessage, getUserChatHistory } from './services/context';
-import { SYSTEM_PROMPT } from './constant';
-import { groqChat } from './services/llm';
-import { streamAudioFromText } from './services/tts';
+import { transcribeAudio } from './services/stt.js';
+import { addUserChatMessage, getUserChatHistory } from './services/context.js';
+import { SYSTEM_PROMPT } from './constant.js';
+import { groqChat } from './services/llm.js';
+import { streamAudioFromText } from './services/tts.js';
 
 config();
 

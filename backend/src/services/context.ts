@@ -1,4 +1,4 @@
-import { ChatMessage } from './llm';
+import { ChatMessage } from './llm.js';
 
 const usersChatHistory: Map<string, ChatMessage[]> = new Map();
 
