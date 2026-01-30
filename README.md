@@ -16,6 +16,8 @@ Aura is a real-time, voice-to-voice AI companion that listens, thinks, and speak
 
 
 <a href="https://youtu.be/-kdmWgZyQaQ?si=NeR1LTGSJPdErREg" target="_blank">▶️Demo Video</a>
+|
+<a href="https://drive.google.com/file/d/1D4Rg7huAoDwTu8io8UeitbH8mBZ9fM7m/view?usp=sharing" target="_blank">⬇️Install App</a>
 
 <img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/150a834c-6eb4-44ff-8efd-f496ee055704" />
 <img width="160" height="400" alt="image" src="https://github.com/user-attachments/assets/f27ab969-8b2a-4c1d-b1cf-333618cb517a" />
